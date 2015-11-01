@@ -2,10 +2,13 @@
 <img src="FixCode.jpg" alt="FixCode Logo" width="230" />
 </p>
 
+<h3 align="center">
 FixCode
-=======
+</h3>
 
-####### Fixing the `Fix Issue` button
+<p align="center">
+Fixing the <code>Fix Issue</code> button
+</p>
 
 <img src="FixIssue.png" alt="Fix Issue" width="500" />
 
