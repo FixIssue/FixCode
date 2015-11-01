@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A13D4D421BE59B72005ADEBA /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13D4D411BE59B72005ADEBA /* AppKit.framework */; };
+		A13D4D441BE59B72005ADEBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13D4D431BE59B72005ADEBA /* Foundation.framework */; };
+		A13D4D491BE59B72005ADEBA /* FixCode.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = A13D4D481BE59B72005ADEBA /* FixCode.xcscheme */; };
+		A13D4D4C1BE59B72005ADEBA /* FixCode.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D4D4B1BE59B72005ADEBA /* FixCode.m */; };
+		A13D4D4F1BE59B72005ADEBA /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D4D4E1BE59B72005ADEBA /* NSObject_Extension.m */; };
+		A13D4D571BE59C96005ADEBA /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D4D561BE59C96005ADEBA /* Aspects.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A13D4D3E1BE59B72005ADEBA /* FixCode.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FixCode.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		A13D4D411BE59B72005ADEBA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		A13D4D431BE59B72005ADEBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		A13D4D471BE59B72005ADEBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A13D4D481BE59B72005ADEBA /* FixCode.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = FixCode.xcscheme; path = FixCode.xcodeproj/xcshareddata/xcschemes/FixCode.xcscheme; sourceTree = SOURCE_ROOT; };
+		A13D4D4A1BE59B72005ADEBA /* FixCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FixCode.h; sourceTree = "<group>"; };
+		A13D4D4B1BE59B72005ADEBA /* FixCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FixCode.m; sourceTree = "<group>"; };
+		A13D4D4D1BE59B72005ADEBA /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
+		A13D4D4E1BE59B72005ADEBA /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
+		A13D4D551BE59C96005ADEBA /* Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Aspects.h; path = vendor/Aspects.h; sourceTree = SOURCE_ROOT; };
+		A13D4D561BE59C96005ADEBA /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Aspects.m; path = vendor/Aspects.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A13D4D3C1BE59B72005ADEBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A13D4D421BE59B72005ADEBA /* AppKit.framework in Frameworks */,
+				A13D4D441BE59B72005ADEBA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A13D4D351BE59B72005ADEBA = {
+			isa = PBXGroup;
+			children = (
+				A13D4D451BE59B72005ADEBA /* Code */,
+				A13D4D401BE59B72005ADEBA /* Frameworks */,
+				A13D4D3F1BE59B72005ADEBA /* Products */,
+				A13D4D461BE59B72005ADEBA /* Supporting Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A13D4D3F1BE59B72005ADEBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A13D4D3E1BE59B72005ADEBA /* FixCode.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A13D4D401BE59B72005ADEBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A13D4D411BE59B72005ADEBA /* AppKit.framework */,
+				A13D4D431BE59B72005ADEBA /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A13D4D451BE59B72005ADEBA /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				A13D4D551BE59C96005ADEBA /* Aspects.h */,
+				A13D4D561BE59C96005ADEBA /* Aspects.m */,
+				A13D4D4A1BE59B72005ADEBA /* FixCode.h */,
+				A13D4D4B1BE59B72005ADEBA /* FixCode.m */,
+				A13D4D4D1BE59B72005ADEBA /* NSObject_Extension.h */,
+				A13D4D4E1BE59B72005ADEBA /* NSObject_Extension.m */,
+			);
+			name = Code;
+			path = FixCode;
+			sourceTree = "<group>";
+		};
+		A13D4D461BE59B72005ADEBA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A13D4D471BE59B72005ADEBA /* Info.plist */,
+				A13D4D481BE59B72005ADEBA /* FixCode.xcscheme */,
+			);
+			name = "Supporting Files";
+			path = FixCode;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A13D4D3D1BE59B72005ADEBA /* FixCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A13D4D521BE59B72005ADEBA /* Build configuration list for PBXNativeTarget "FixCode" */;
+			buildPhases = (
+				A13D4D3A1BE59B72005ADEBA /* Sources */,
+				A13D4D3B1BE59B72005ADEBA /* Resources */,
+				A13D4D3C1BE59B72005ADEBA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FixCode;
+			productName = FixCode;
+			productReference = A13D4D3E1BE59B72005ADEBA /* FixCode.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A13D4D361BE59B72005ADEBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Fastlane;
+				TargetAttributes = {
+					A13D4D3D1BE59B72005ADEBA = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = A13D4D391BE59B72005ADEBA /* Build configuration list for PBXProject "FixCode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A13D4D351BE59B72005ADEBA;
+			productRefGroup = A13D4D3F1BE59B72005ADEBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A13D4D3D1BE59B72005ADEBA /* FixCode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A13D4D3B1BE59B72005ADEBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A13D4D491BE59B72005ADEBA /* FixCode.xcscheme in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A13D4D3A1BE59B72005ADEBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A13D4D4C1BE59B72005ADEBA /* FixCode.m in Sources */,
+				A13D4D4F1BE59B72005ADEBA /* NSObject_Extension.m in Sources */,
+				A13D4D571BE59C96005ADEBA /* Aspects.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A13D4D501BE59B72005ADEBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		A13D4D511BE59B72005ADEBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		A13D4D531BE59B72005ADEBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = FixCode/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		A13D4D541BE59B72005ADEBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = FixCode/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A13D4D391BE59B72005ADEBA /* Build configuration list for PBXProject "FixCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A13D4D501BE59B72005ADEBA /* Debug */,
+				A13D4D511BE59B72005ADEBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A13D4D521BE59B72005ADEBA /* Build configuration list for PBXNativeTarget "FixCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A13D4D531BE59B72005ADEBA /* Debug */,
+				A13D4D541BE59B72005ADEBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A13D4D361BE59B72005ADEBA /* Project object */;
+}
