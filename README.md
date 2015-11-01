@@ -22,12 +22,28 @@ FixCode
 :computer: | Support for iOS, Mac, WatchOS and Apple TV Projects
 :octocat: | Full git support
 
+# Installation
+
+The recommended way to install `FixCode` is using [Alcatraz](http://alcatraz.io/). 
+
+Install [Alcatraz](http://alcatraz.io/) using
+
+```
+curl -fsSL https://raw.githubusercontent.com/supermarin/Alcatraz/deploy/Scripts/install.sh | sh
+```
+
+- Restart Xcode
+- Click on `Window`
+- Select `Package Manager`
+- Search and Install `FixCode`
+- Restart Xcode
+
 # Thanks
 
-Special thanks to Apple Inc for providing the initial "Fix Issue" functionality. Without it, this project wouldn't exist.
+Special thanks to Apple Inc for providing the initial "Fix Issue" functionality. Without it, this project wouldn't be possible.
 
 - The code was implemented by [@neonacho](https://twitter.com/neonacho)
-- [@KrauseFx](https://twitter.com/KrauseFx) was also there, providing drinks while [@neonacho](https://twitter.com/neonacho) did the actual work
+- [@KrauseFx](https://twitter.com/KrauseFx) was also there, providing drinks while [@neonacho](https://twitter.com/neonacho) did the actual work.
 
 # Need help?
 Please submit an issue on GitHub and provide information about your setup
