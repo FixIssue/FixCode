@@ -10,8 +10,6 @@ FixCode
 Fixing the <code>Fix Issue</code> button
 </p>
 
-<img src="FixIssue.png" alt="Fix Issue" width="500" />
-
 |  | Fix Issue
 ----------------------|----------------------------------
 :sparkles: | Get the most out of the built-in `Fix Issue` button
@@ -28,6 +26,8 @@ Fixing the <code>Fix Issue</code> button
 :hatching_chick: | Over 90KB of network requests
 :computer: | Support for iOS, Mac, WatchOS and Apple TV Projects
 :octocat: | Full git support
+
+<img src="FixIssueButton.jpg" alt="Fix Issue" width="500" />
 
 # Installation
 
