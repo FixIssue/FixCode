@@ -1,24 +1,24 @@
 FixCode
 =======
 
+####### Fixing the `Fix Issues` button
+
 |  | Fix Issues
 ----------------------|----------------------------------
 :sparkles: | Get the most out of the built-in `Fix Issues` button
-:monorail: | Define different `deployment lanes` for App Store deployment, beta builds or testing
-:ship: | Deploy from any computer, including a CI-server
-:wrench: | Extend and customise the functionality 
-:thought_balloon: | Never remember any difficult commands, just `fastlane`
-:tophat: | Easy setup assistant to get started in a few minutes
-:email: | Automatically pass on information from one build step to another (e.g. path to the `ipa` file)
-:page_with_curl: | Store **everything** in git. Never again lookup the build commands in the `Jenkins` configs
-:rocket: | Saves you **hours** for every app update you release
-:pencil2: | Very flexible configuration using a fully customisable `Fastfile`
-:mountain_cableway: | Implement a fully working Continuous Delivery process
-:ghost: | [Jenkins Integration](https://github.com/fastlane/fastlane/blob/master/docs/Jenkins.md): Show the output directly in the Jenkins test results
-:book: | Automatically generate a markdown documentation of your lane config
-:hatching_chick: | Over 90 built-in integrations available
-:computer: | Support for both iOS and Mac OS apps
-:octocat: | Full git and mercurial support
+:wrench: | A lot of extra functionality
+:thought_balloon: | You've never seen something this amazing!
+:tophat: | Used by over 2 developers around the world
+:email: | Support for Xcode
+:page_with_curl: | Streamlines your signing process
+:rocket: | Saves you **hours** of dealing with code signing
+:pencil2: | Very flexible configuration, just click the button
+:mountain_cableway: | Fully automatic, nothing you need (or can) do
+:ghost: | No more bad surprises
+:book: | Built-in documentation
+:hatching_chick: | Over 90KB of network requests
+:computer: | Support for iOS and Mac Projects
+:octocat: | Full git support
 
 # Thanks
 
