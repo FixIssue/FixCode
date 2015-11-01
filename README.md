@@ -1,11 +1,13 @@
 FixCode
 =======
 
-####### Fixing the `Fix Issues` button
+####### Fixing the `Fix Issue` button
 
-|  | Fix Issues
+![FixIssue.png](FixIssue.png)
+
+|  | Fix Issue
 ----------------------|----------------------------------
-:sparkles: | Get the most out of the built-in `Fix Issues` button
+:sparkles: | Get the most out of the built-in `Fix Issue` button
 :wrench: | A lot of extra functionality
 :thought_balloon: | You've never seen something this amazing!
 :tophat: | Used by over 2 developers around the world
@@ -25,7 +27,7 @@ FixCode
 Special thanks to Apple Inc for providing the initial "Fix Issue" functionality. Without it, this project wouldn't exist.
 
 - The code was implemented by [@neonacho](https://twitter.com/neonacho)
-- [@KrauseFx](https://twitter.com/KrauseFx) was also there, providing drinks while [@neonacho](https://twitter.com/neonacho) did the actual work.
+- [@KrauseFx](https://twitter.com/KrauseFx) was also there, providing drinks while [@neonacho](https://twitter.com/neonacho) did the actual work
 
 # Need help?
 Please submit an issue on GitHub and provide information about your setup
