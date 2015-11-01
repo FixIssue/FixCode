@@ -63,6 +63,8 @@
 
 - (void)doItRight {
     [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://github.com/fastlane/fastlane/blob/master/docs/CodeSigning.md"]];
+
+    [self.currentCodeSigningWindowController.window close];
     [self.currentCodeSigningWindowController close];
 }
 
