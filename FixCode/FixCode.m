@@ -68,6 +68,16 @@
     [self.currentCodeSigningWindowController close];
 }
 
+- (void)findAndReplaceFixIssueButtonInView:(NSView*)view {
+    NSButton* fixIssueButton = [self findFirstButtonRecursive:view];
+    fixIssueButton.title = @"Do it right ✨🚀✨";
+
+    fixIssueButton.action = @selector(doItRight);
+    fixIssueButton.target = self;
+
+    [fixIssueButton sizeToFit];
+}
+
 - (NSButton*)findFirstButtonRecursive:(NSView*)view {
     if ([view isKindOfClass:NSButton.class]) {
         return (NSButton*)view;
@@ -108,14 +118,19 @@
         self.currentCodeSigningWindowController = info.instance;
         NSView* contentView = [[self.currentCodeSigningWindowController window] contentView];
 
-        NSButton* fixIssueButton = [self findFirstButtonRecursive:contentView];
-        fixIssueButton.title = @"Do it right ✨🚀✨";
-
-        fixIssueButton.action = @selector(doItRight);
-        fixIssueButton.target = self;
+        [self findAndReplaceFixIssueButtonInView:contentView];
 
         NSTextField* field = [self findLastTextFieldRecursive:contentView];
         [field setStringValue:[field.stringValue componentsSeparatedByString:@"\n"][0]];
+    } error:&error];
+
+    if (error) {
+        NSLog(@"Error: %@", error);
+    }
+
+    [objc_getClass("Xcode3CodesignTroubleshootingViewController") aspect_hookSelector:@selector(viewDidAppear) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> info) {
+        NSView* view = [info.instance view];
+        [self findAndReplaceFixIssueButtonInView:view];
     } error:&error];
 
     if (error) {
