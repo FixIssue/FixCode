@@ -1,3 +1,5 @@
+<img src="FixCode.jpg" alt="FixCode Logo" width="500" />
+
 FixCode
 =======
 
