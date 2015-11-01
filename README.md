@@ -17,7 +17,7 @@ FixCode
 :ghost: | No more bad surprises
 :book: | Built-in documentation
 :hatching_chick: | Over 90KB of network requests
-:computer: | Support for iOS and Mac Projects
+:computer: | Support for iOS, Mac, WatchOS and Apple TV Projects
 :octocat: | Full git support
 
 # Thanks
