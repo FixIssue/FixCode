@@ -1,4 +1,4 @@
-<img src="FixCode.jpg" alt="FixCode Logo" width="500" />
+<img src="FixCode.jpg" alt="FixCode Logo" width="230" />
 
 FixCode
 =======
