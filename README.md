@@ -3,7 +3,7 @@ FixCode
 
 ####### Fixing the `Fix Issue` button
 
-![FixIssue.png](FixIssue.png)
+<img src="FixIssue.png" alt="Fix Issue" width="500" />
 
 |  | Fix Issue
 ----------------------|----------------------------------
