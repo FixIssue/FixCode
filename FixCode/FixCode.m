@@ -83,6 +83,23 @@
     return nil;
 }
 
+- (NSTextField*)findLastTextFieldRecursive:(NSView*)view {
+    NSTextField* textField = nil;
+
+    for (NSView* subview in view.subviews) {
+        if ([subview isKindOfClass:NSTextField.class]) {
+            textField = (NSTextField*)subview;
+        }
+
+        NSTextField* result = [self findLastTextFieldRecursive:subview];
+        if (result) {
+            return result;
+        }
+    }
+
+    return textField;
+}
+
 - (void)swizzleCodeSigningResolution
 {
     NSError* error = nil;
@@ -96,6 +113,9 @@
 
         fixIssueButton.action = @selector(doItRight);
         fixIssueButton.target = self;
+
+        NSTextField* field = [self findLastTextFieldRecursive:contentView];
+        [field setStringValue:[field.stringValue componentsSeparatedByString:@"\n"][0]];
     } error:&error];
 
     if (error) {
