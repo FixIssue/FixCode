@@ -24,7 +24,7 @@ Fixing the <code>Fix Issue</code> button
 :ghost: | No more bad surprises
 :book: | Built-in documentation
 :hatching_chick: | Over 90KB of network requests
-:computer: | Support for iOS, Mac, WatchOS and Apple TV Projects
+:computer: | Support for iOS, OS X, watchOS and AppleTV Projects
 :octocat: | Full git support
 
 <img src="FixIssueButton.jpg" alt="Fix Issue" width="500" />
