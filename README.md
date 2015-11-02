@@ -31,9 +31,26 @@ Fixing the <code>Fix Issue</code> button
 
 # Installation
 
-The recommended way to install `FixCode` is using [Alcatraz](http://alcatraz.io/). 
+### Using fastlane
 
-Install [Alcatraz](http://alcatraz.io/) using
+Add the `install_xcode_plugin` to your `Fastfile`. This way, the plugin gets installed for the whole team, so that no one can revoke your certificate by mistake.
+
+```ruby
+lane :xcode do
+  install_xcode_plugin(
+    url: "https://github.com/fastlane/FixCode/releases/download/0.1.0/FixCode.xcplugin.zip"
+  )
+end
+```
+
+```
+fastlane xcode
+```
+
+### Alcatraz
+You can install `FixCode` using [Alcatraz](http://alcatraz.io/). 
+
+First, install [Alcatraz](http://alcatraz.io/) using
 
 ```
 curl -fsSL https://raw.githubusercontent.com/supermarin/Alcatraz/deploy/Scripts/install.sh | sh
