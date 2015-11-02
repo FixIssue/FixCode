@@ -10,22 +10,19 @@ FixCode
 Fixing the <code>Fix Issue</code> button
 </p>
 
+This Xcode plugin disables the `Fix Issue` functionality in Xcode. This way, none of your team members can click this button by mistake and might end up revoking all existing certificates and provisioning profiles.
+
+
 |  | Fix Issue
 ----------------------|----------------------------------
 :sparkles: | Get the most out of the built-in `Fix Issue` button
-:wrench: | A lot of extra functionality
 :thought_balloon: | You've never seen something this amazing!
-:tophat: | Used by over 2 developers around the world
 :email: | Support for Xcode
 :page_with_curl: | Streamlines your signing process
 :rocket: | Saves you **hours** of dealing with code signing
-:pencil2: | Very flexible configuration, just click the button
 :mountain_cableway: | Fully automatic, nothing you need (or can) do
 :ghost: | No more bad surprises
-:book: | Built-in documentation
-:hatching_chick: | Over 90KB of network requests
 :computer: | Support for iOS, OS X, watchOS and AppleTV Projects
-:octocat: | Full git support
 
 <img src="FixIssueButton.jpg" alt="Fix Issue" width="500" />
 
