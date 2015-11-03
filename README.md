@@ -20,12 +20,6 @@ This Xcode plugin disables the `Fix Issue` functionality in Xcode. This way, non
 :sparkles: | Super easy installation
 :computer: | Support for iOS, OS X, watchOS and AppleTV Projects
 
-:thought_balloon: | You've never seen something this amazing!
-:email: | Support for Xcode
-:page_with_curl: | Streamlines your signing process
-:mountain_cableway: | Fully automatic, nothing you need (or can) do
-:ghost: | No more bad surprises
-
 <img src="FixIssueButton.jpg" alt="Fix Issue" width="500" />
 
 # Installation
