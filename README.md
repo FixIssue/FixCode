@@ -65,6 +65,8 @@ This Xcode plugin will deactivate the button and replace it with an emoji (and t
 
 You might ask yourself, why the button doesn't just run [sigh](https://github.com/fastlane/sigh) or [cert](https://github.com/fastlane/cert): Check out the [blog post about developer tools by Felix Krause](https://krausefx.com/blog/ios-tools) for more information about how developer tools should be transparent and show you what they do.
 
+<img src="FixIssueButton2.jpg" alt="Fix Issue" width="500" />
+
 # Thanks
 
 Special thanks to Apple Inc for providing the initial "Fix Issue" functionality. Without it, this project wouldn't be possible.
