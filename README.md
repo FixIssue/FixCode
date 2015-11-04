@@ -55,6 +55,16 @@ curl -fsSL https://raw.githubusercontent.com/supermarin/Alcatraz/deploy/Scripts/
 - Search and Install `FixCode`
 - Restart Xcode
 
+# What does this do?
+
+The primary goal of this plugin is to **disable** the original `Fix Issue` button, as it has side effects, like [revoking your certificates and with it all its provisioning profiles](https://raw.githubusercontent.com/fastlane/sigh/master/assets/SignErrors.png).
+
+This is especially a big problem when working in a bigger team: Someone clicks the `Fix Issue` button and revokes the other profiles. This includes Enterprise profiles, resulting in breaking the app on all devices it's installed on.
+
+This Xcode plugin will deactivate the button and replace it with an emoji (and therefore much friendlier) button. The button will open the [official code signing guide](https://github.com/fastlane/fastlane/blob/master/docs/CodeSigning.md).
+
+You might ask yourself, why the button doesn't just run [sigh](https://github.com/fastlane/sigh) or [cert](https://github.com/fastlane/cert): Check out the [blog post about developer tools by Felix Krause](https://krausefx.com/blog/ios-tools) for more information about how developer tools should be transparent and show you what they do.
+
 # Thanks
 
 Special thanks to Apple Inc for providing the initial "Fix Issue" functionality. Without it, this project wouldn't be possible.
