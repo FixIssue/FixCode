@@ -62,7 +62,7 @@
 #pragma mark -
 
 - (void)doItRight {
-    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://github.com/fastlane/fastlane/blob/master/docs/CodeSigning.md"]];
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://codesigning.guide"]];
 
     [self.currentCodeSigningWindowController.window close];
     [self.currentCodeSigningWindowController close];
