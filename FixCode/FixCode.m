@@ -127,12 +127,17 @@
     if (error) {
         NSLog(@"Error: %@", error);
     }
-
-    [objc_getClass("Xcode3CodesignTroubleshootingViewController") aspect_hookSelector:@selector(viewDidAppear) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> info) {
-        NSView* view = [info.instance view];
-        [self findAndReplaceFixIssueButtonInView:view];
+    
+    [objc_getClass("DVTStackView_ML") aspect_hookSelector:@selector(_autoLayoutViewViewFrameDidChange:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> info) {
+        NSView* view = info.instance;
+        
+        if([[view.superview nextResponder] isKindOfClass:objc_getClass("Xcode3CodesignTroubleshootingViewController")])
+        {
+            [self findAndReplaceFixIssueButtonInView:view.superview];
+        }
     } error:&error];
-
+    
+    
     if (error) {
         NSLog(@"Error: %@", error);
     }
