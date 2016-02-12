@@ -11,6 +11,14 @@
 #import "Aspects.h"
 #import "FixCode.h"
 
+@interface NSObject (Shutup)
+
+-(void)_autoLayoutViewViewFrameDidChange:(id)arg0;
+
+@end
+
+#pragma mark -
+
 @interface NSView (Debug)
 
 -(NSString*)_subtreeDescription;
@@ -127,17 +135,15 @@
     if (error) {
         NSLog(@"Error: %@", error);
     }
-    
+
     [objc_getClass("DVTStackView_ML") aspect_hookSelector:@selector(_autoLayoutViewViewFrameDidChange:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> info) {
         NSView* view = info.instance;
-        
-        if([[view.superview nextResponder] isKindOfClass:objc_getClass("Xcode3CodesignTroubleshootingViewController")])
-        {
+
+        if([[view.superview nextResponder] isKindOfClass:objc_getClass("Xcode3CodesignTroubleshootingViewController")]) {
             [self findAndReplaceFixIssueButtonInView:view.superview];
         }
     } error:&error];
-    
-    
+
     if (error) {
         NSLog(@"Error: %@", error);
     }
