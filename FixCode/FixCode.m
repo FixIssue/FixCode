@@ -147,6 +147,22 @@
     if (error) {
         NSLog(@"Error: %@", error);
     }
+
+    [objc_getClass("IDEFlightCheckListView") aspect_hookSelector:@selector(_shouldShowResolveButton) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> info) {
+        BOOL result = NO;
+        [info.originalInvocation getReturnValue:&result];
+
+        if (!result) {
+            return;
+        }
+
+        NSView* view = info.instance;
+        [self findAndReplaceFixIssueButtonInView:view];
+    } error:&error];
+
+    if (error) {
+        NSLog(@"Error: %@", error);
+    }
 }
 
 @end
