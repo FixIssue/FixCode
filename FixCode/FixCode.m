@@ -11,6 +11,18 @@
 #import "Aspects.h"
 #import "FixCode.h"
 
+@interface IDEEnhancedProvisioningSigningIdentity : NSObject
+
+@property NSUInteger state; // 0: current, 2: online-only
+
+@end
+
+@interface IDESigningIdentityActionCellViewContents : NSObject
+
+@property IDEEnhancedProvisioningSigningIdentity *signingIdentity;
+
+@end
+
 @interface NSObject (Shutup)
 
 -(void)_autoLayoutViewViewFrameDidChange:(id)arg0;
@@ -160,6 +172,16 @@
         [self findAndReplaceFixIssueButtonInView:view];
     } error:&error];
 
+    if (error) {
+        NSLog(@"Error: %@", error);
+    }
+    
+    [objc_getClass("IDESigningIdentityActionCellView") aspect_hookSelector:@selector(setObjectValue:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> info, IDESigningIdentityActionCellViewContents *cellContents) {
+        if ([[cellContents signingIdentity] state] == 2) {
+            [self findAndReplaceFixIssueButtonInView:info.instance];
+        }
+    } error:&error];
+    
     if (error) {
         NSLog(@"Error: %@", error);
     }
