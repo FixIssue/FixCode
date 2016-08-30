@@ -34,7 +34,7 @@ Add the `install_xcode_plugin` to your `Fastfile`. This way, the plugin gets ins
 
 ```ruby
 lane :xcode do
-  install_xcode_plugin(github: 'https://github.com/neonichu/FixCode')
+  install_xcode_plugin(github: 'https://github.com/FixIssue/FixCode')
 end
 ```
 
