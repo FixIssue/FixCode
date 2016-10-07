@@ -1,4 +1,4 @@
-[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+[![Best Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 
 **Xcode 8 does not load unsigned code anymore** - see <https://github.com/alcatraz/Alcatraz/issues/475>, therefore this project is deprecated and only available for historical purposes.
 
